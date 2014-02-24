@@ -1,5 +1,7 @@
 CarClub::Application.routes.draw do
   resources :cars
+  get '/deals', to 'deals#special_of_the_day'
+  root to 'deals#special_of_the_day'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
