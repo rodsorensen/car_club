@@ -1,4 +1,6 @@
 CarClub::Application.routes.draw do
+  get "shows/new"
+  get "shows/create"
   resources :cars
   get '/deals', to: 'deals#special_of_the_day'
   root to: 'deals#special_of_the_day'

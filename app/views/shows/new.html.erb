@@ -1,0 +1,20 @@
+<h1> Apply for entry to Car Show</h1>
+<%= form_for @show do |form| %>
+
+  <%= form.label :make, "Enter make of auto" %>
+  <%= form.text_field :make %>
+  
+  <br/>
+  <%= form.label :model, "Enter model" %>
+  <%= form.text_field :model %>
+  
+  <br/>
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+
+  <br/>
+
+  <%= form.submit "Apply" %>
+
+<% end -%>
+
